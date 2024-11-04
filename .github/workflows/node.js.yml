@@ -29,5 +29,5 @@ jobs:
     - run: npm ci
     - run: |
         touch .env
-        echo "${{ secret.AWS_ENV }}" > .env
+        echo "${{ secrets.AWS_ENV }}" > .env
     - run: npm run build
