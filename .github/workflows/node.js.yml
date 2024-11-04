@@ -31,3 +31,4 @@ jobs:
         touch .env
         echo "${{ secrets.AWS_ENV }}" > .env
     - run: npm run build
+    - run: pm2 restart Frontend
