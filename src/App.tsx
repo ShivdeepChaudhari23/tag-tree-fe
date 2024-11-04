@@ -12,6 +12,7 @@ function App() {
 
   useEffect(() => {
     if (data?.data.treeList) {
+      console.log('LOADING LSITS');
       setTreeList(data.data.treeList);
     }
   }, [data]);
